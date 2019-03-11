@@ -1,2 +1,2 @@
 # Perceptron
-Implementation of perceptron neural network
+Implementation of perceptron neural network in JavaFX framework
