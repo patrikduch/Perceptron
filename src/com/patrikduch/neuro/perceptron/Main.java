@@ -10,9 +10,15 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
+        primaryStage.sizeToScene();
+        primaryStage.show();
+        primaryStage.setMinWidth(primaryStage.getWidth());
+        primaryStage.setMinHeight(primaryStage.getHeight());
+
+        primaryStage.setTitle("Perceptron by Patrik Duch");
+        primaryStage.setScene(new Scene(root, 900, 575));
+
         primaryStage.show();
     }
 
